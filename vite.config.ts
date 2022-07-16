@@ -14,6 +14,7 @@ export default defineConfig({
     react(),
     visualizer({
       open: true,
+      template: "sunburst",
     }),
   ],
   test: {
