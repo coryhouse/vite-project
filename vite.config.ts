@@ -17,7 +17,7 @@ export default defineConfig({
   },
   build: {
     lib: {
-      formats: ["es"],
+      formats: ["es", "cjs"],
       entry: resolve(__dirname, "src/index.ts"),
       // the proper extensions will be added
       fileName: "index",
