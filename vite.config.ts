@@ -5,14 +5,26 @@
 
 import { defineConfig } from "vitest/config";
 import react from "@vitejs/plugin-react";
+import { resolve } from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-
   test: {
     globals: true,
     environment: "jsdom",
     setupFiles: "./src/test/setup.ts",
+  },
+  build: {
+    lib: {
+      formats: ["es"],
+      entry: resolve(__dirname, "src/index.ts"),
+      // the proper extensions will be added
+      fileName: "index",
+    },
+    rollupOptions: {
+      // Externalize deps that shouldn't be bundled into the library
+      external: ["react", "react-dom"],
+    },
   },
 });
