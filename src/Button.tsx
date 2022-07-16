@@ -1,3 +1,5 @@
+import styles from "./Button.module.scss";
+
 export default function Button() {
-  return <button>Button</button>;
+  return <button className={styles.root}>Button</button>;
 }
