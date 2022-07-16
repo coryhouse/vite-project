@@ -1,4 +1,4 @@
 import * as math from "./math";
-import * as Button from "./Button";
+import { default as Button } from "./Button";
 
 export { math, Button };
