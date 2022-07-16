@@ -8,6 +8,6 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
       This file merely exists to display the components. This file isn't bundled
       in the library.
     </p>
-    <Button />
+    <Button type="submit" />
   </React.StrictMode>
 );
