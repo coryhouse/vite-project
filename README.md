@@ -4,7 +4,7 @@
 
 - [x] Vitest
 - [x] testing-library
-- [x] ESLint
+- [x] ESLint with [eslint-config-react-app](eslint-config-react-app) config and [vite-plugin-eslint](https://www.npmjs.com/package/vite-plugin-eslint)
 - [x] Prettier
 
 **NOTE**: See the `library` branch for an example of using Vite to generate a library
