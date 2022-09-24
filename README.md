@@ -1,6 +1,11 @@
-# vite-project
+# Vite Reference Project
 
-Vite and Vitest reference project
+## Enhancements
+
+- [x] Vitest
+- [x] testing-library
+- [x] ESLint
+- [x] Prettier
 
 **NOTE**: See the `library` branch for an example of using Vite to generate a library
 
