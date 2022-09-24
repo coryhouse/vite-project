@@ -5,8 +5,6 @@ import App from "./App";
 describe("App", () => {
   it("should render", () => {
     render(<App />);
-    screen.getByRole("button", { name: "count is 0" });
+    screen.getByText("Hello world!");
   });
 });
-
-describe.todo("Write more tests");
