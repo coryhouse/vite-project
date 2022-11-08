@@ -11,13 +11,23 @@
     "test:ui": "vitest --ui",
     "coverage": "vitest run --coverage",
     "lint": "eslint --max-warnings=0 src",
-    "prettier": "prettier --write src"
+    "prettier": "prettier --write src",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.19.1",
+    "@storybook/addon-actions": "^6.5.12",
+    "@storybook/addon-essentials": "^6.5.12",
+    "@storybook/addon-interactions": "^6.5.12",
+    "@storybook/addon-links": "^6.5.12",
+    "@storybook/builder-vite": "^0.2.2",
+    "@storybook/react": "^6.5.12",
+    "@storybook/testing-library": "^0.0.13",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.4.3",
@@ -26,8 +36,10 @@
     "@vitejs/plugin-react": "^2.1.0",
     "@vitest/ui": "^0.23.4",
     "autoprefixer": "^10.4.12",
+    "babel-loader": "^8.2.5",
     "eslint": "^8.24.0",
     "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-storybook": "^0.6.4",
     "jsdom": "^20.0.0",
     "postcss": "^8.4.16",
     "prettier": "^2.7.1",
